@@ -19,7 +19,34 @@
   text-decoration: none;
   font-family: "Roboto", sans-serif;
 }
+html {
+  font-size: 10px;
+}
 .container {
   width: 80%;
   margin: 0 auto;
+}
+/* ========================HEADER================ */
+header {
+  background-color: #fff;
+  height: 5rem;
+  padding-top: 1rem;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container h1 {
+  font-size: 2.5rem;
+  color: var(--eighth-color);
+}
+header .container a {
+  font-size: 1.8rem;
+  color: #fff;
+  border: none;
+  border-radius: 6.4rem;
+  background-color: var(--eighth-color);
+  padding: 1.1rem 3rem;
+  cursor: pointer;
 }
