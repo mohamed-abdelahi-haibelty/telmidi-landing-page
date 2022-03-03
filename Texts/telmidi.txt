@@ -1,0 +1,18 @@
+
+    # TELMIDI#
+
+    Telmidi is a platform that helps high school students to master their curriculum in an easy
+     and interactive way, it's free and always will be.';
+     developed and launched in XX/YY/ZZ by Babe Saleh Mahfoud .
+ 
+
+        # The Founder  #
+
+Babe Saleh Mahofoud is a former student of 'Lycée d'Aioun'  
+and currently majoring in Computer Engineering at the Higher School of Technology in Casablanca (ESTC).
+ He loves computer programming, reading and cinema.
+ the idea of Telmidi was a shared dream between him and Hamadi omar,
+ Babe Saleh worked on it for more than a year and launched it in XX/YY/ZZ .
+
+ //He has an aspiring vision in software development business
+  particularly app development. And in 04/10/2021  he launched his first app, Telmidi.//
