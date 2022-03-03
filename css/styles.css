@@ -49,4 +49,20 @@ header .container a {
   background-color: var(--eighth-color);
   padding: 1.1rem 3rem;
   cursor: pointer;
+  position: relative;
 }
+/* .circle {
+  position: absolute;
+  background-color: #fff;
+  width: 10rem;
+  height: 10rem;
+  transform: translate(-50%, -50%) scale(0);
+  border-radius: 50%;
+  animation: scale 0.5s ease-out;
+}
+@keyframes scale {
+  to {
+    transform: translate(-50%, -50%) scale(3);
+    opacity: 0;
+  }
+} */
