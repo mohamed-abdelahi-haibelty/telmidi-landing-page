@@ -29,7 +29,7 @@ html {
 /* ========================HEADER================ */
 header {
   background-color: #fff;
-  height: 5rem;
+  height: 6rem;
   padding-top: 1rem;
 }
 header .container {
@@ -66,3 +66,65 @@ header .container a {
     opacity: 0;
   }
 } */
+/* ====================MAIN======================= */
+.main {
+  background-color: var(--eighth-color);
+  height: calc(100vh - 6rem);
+}
+.main .container {
+  display: flex;
+  align-items: center;
+  padding-top: 5rem;
+}
+.main .container .text {
+  animation-duration: 6s;
+  animation-timing-function: ease;
+  animation-name: move;
+}
+.main .container h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #023246;
+  font-family: "Merriweather", serif;
+  padding-bottom: 1rem;
+}
+.main .container p {
+  font-size: 3rem;
+  line-height: 1.7;
+  color: #fff;
+  font-family: "Moon Dance", cursive;
+}
+.main .container span {
+  color: var(--third-color);
+  font-weight: bold;
+  font-family: "Moon Dance", cursive;
+}
+.main .container img {
+  width: 100%;
+  animation-duration: 6s;
+  animation-name: vanish;
+  animation-timing-function: ease-in-out;
+  position: relative;
+}
+@keyframes vanish {
+  0% {
+    opacity: 0;
+    left: 1rem;
+  }
+  100% {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes move {
+  0% {
+    opacity: 0;
+    right: 3rem;
+    top: 1rem;
+  }
+  100% {
+    opacity: 1;
+    left: 2rem;
+    top: 0;
+  }
+}
