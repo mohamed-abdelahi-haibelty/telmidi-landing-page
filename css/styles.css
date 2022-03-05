@@ -157,6 +157,8 @@ header .container a:hover {
   .main .container {
     flex-direction: column;
     width: 75%;
+    gap: 3rem;
+    justify-content: center;
   }
 }
 .countDown > div::before {
