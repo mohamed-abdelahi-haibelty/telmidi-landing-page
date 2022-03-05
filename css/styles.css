@@ -51,6 +51,9 @@ header .container a {
   cursor: pointer;
   position: relative;
 }
+header .container a:hover {
+  background-color: var(--second-color);
+}
 /* .circle {
   position: absolute;
   background-color: #fff;
@@ -68,7 +71,7 @@ header .container a {
 } */
 /* ====================MAIN======================= */
 .main {
-  background-color: var(--eighth-color);
+  background-color: #050505;
   height: calc(100vh - 6rem);
 }
 .main .container {
@@ -84,20 +87,21 @@ header .container a {
 .main .container h2 {
   font-size: 3rem;
   font-weight: bold;
-  color: #023246;
-  font-family: "Merriweather", serif;
+  color: var(--eighth-color);
+  font-family: "Moon Dance", cursive;
   padding-bottom: 1rem;
 }
 .main .container p {
-  font-size: 3rem;
+  font-size: 2rem;
   line-height: 1.7;
   color: #fff;
-  font-family: "Moon Dance", cursive;
+  font-family: "Merriweather", serif;
 }
 .main .container span {
-  color: var(--third-color);
+  color: var(--eighth-color);
   font-weight: bold;
   font-family: "Moon Dance", cursive;
+  font-size: 2.5rem;
 }
 .main .container img {
   width: 100%;
@@ -137,10 +141,36 @@ header .container a {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
+  border-radius: 6.4rem;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 4.2rem;
+  color: var(--third-color);
+  position: relative;
+  overflow: hidden;
+}
+.countDown > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  border-radius: 50%;
+  transition: transform 500ms ease-in-out;
+  transform: scale(1.5);
+}
+.countDown > div:hover:before {
+  transform: scale(0);
+  background-color: var(--sixth-color);
+}
+.countDown > div h3 {
+  z-index: 2;
 }
 .day,
 .hour,
 .minute,
 .second {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
