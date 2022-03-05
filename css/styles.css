@@ -150,6 +150,11 @@ header .container a:hover {
   position: relative;
   overflow: hidden;
 }
+@media (max-width: 767px) {
+  .countDown > div {
+    padding: 0.4rem 2.4rem;
+  }
+}
 .countDown > div::before {
   content: "";
   position: absolute;
