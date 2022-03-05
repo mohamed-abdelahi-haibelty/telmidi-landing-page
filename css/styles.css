@@ -154,6 +154,10 @@ header .container a:hover {
   .countDown > div {
     padding: 0.4rem 2.4rem;
   }
+  .main .container {
+    flex-direction: column;
+    width: 75%;
+  }
 }
 .countDown > div::before {
   content: "";
