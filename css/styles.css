@@ -128,3 +128,19 @@ header .container a {
     top: 0;
   }
 }
+/* ========================MAIN COUNTdOWN======================= */
+.countDown {
+  display: flex;
+  gap: 1rem;
+}
+.countDown > div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+.day,
+.hour,
+.minute,
+.second {
+  font-size: 2rem;
+}
