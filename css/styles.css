@@ -54,9 +54,9 @@ header .container a {
 header .container a:hover {
   background-color: var(--second-color);
 }
-/* .circle {
+.circle {
   position: absolute;
-  background-color: #fff;
+  background-color: rgb(146, 9, 9);
   width: 10rem;
   height: 10rem;
   transform: translate(-50%, -50%) scale(0);
@@ -68,7 +68,7 @@ header .container a:hover {
     transform: translate(-50%, -50%) scale(3);
     opacity: 0;
   }
-} */
+}
 /* ====================MAIN======================= */
 .main {
   background-color: #050505;

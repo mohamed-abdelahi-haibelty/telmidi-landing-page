@@ -1,0 +1,95 @@
+:root {
+  --main-color: #f6f6f6;
+  --second-color: #023246;
+  --third-color: #001b48;
+  --fourth-color: #02457a;
+  --fife-color: #01babe;
+  --sixth-color: #97cadb;
+  --seventh-color: #d6ebee;
+  --eighth-color: #287094;
+  --nineth-color: #d4d4ce;
+  --padding-top-bottom: 1.2rem;
+  --padding-left-right: 1.2rem;
+  --border-radius: 6.4rem;
+}
+
+/* ======================GLOBAL RULES==================== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+}
+html {
+  font-size: 10px;
+}
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+/* ============================HEADER======================== */
+header {
+  background-color: #fff;
+  box-shadow: 0 0 10px #ddd;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  height: 7.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--eighth-color);
+  font-weight: bold;
+  font-size: 2.2rem;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7.2rem;
+}
+header nav a {
+  padding: 0.2rem 1rem 0 1rem;
+  font-size: 1.6rem;
+  color: var(--eighth-color);
+  font-weight: 700;
+  transition: 0.3s ease;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 7.2rem;
+  overflow: hidden;
+}
+header nav a:hover {
+  background-color: #fafafa;
+  color: var(--fourth-color);
+}
+header nav a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 0.4rem;
+  background-color: var(--eighth-color);
+  top: 0;
+  left: -100%;
+  transition: 0.3s ease;
+}
+header nav a:hover::before {
+  left: 0;
+}
+header .download {
+  padding: var(--padding-top-bottom) var(--padding-left-right);
+  font-size: 1.4rem;
+  border-radius: var(--border-radius);
+  background-color: var(--eighth-color);
+  outline: none;
+  border: none;
+  color: #fff;
+}
