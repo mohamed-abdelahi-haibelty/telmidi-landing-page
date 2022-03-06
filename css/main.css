@@ -93,3 +93,62 @@ header .download {
   border: none;
   color: #fff;
 }
+.burger-menu {
+  display: none;
+}
+.show-menu {
+  display: none !important;
+}
+
+/* =================MEDIA QUERY================ */
+@media (max-width: 667px) {
+  header .download {
+    display: none;
+  }
+  .burger-menu {
+    display: flex;
+    position: relative;
+  }
+  .nav-btn {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .nav-btn i {
+    font-size: 2rem;
+    color: var(--eighth-color);
+  }
+  #nav {
+    display: block;
+    position: absolute;
+    right: 5rem;
+    top: 8rem;
+    background-color: #f6f6f6;
+    min-width: 200px;
+    height: auto;
+    transition: 0.3s ease;
+  }
+  #nav::before {
+    content: "";
+    border-width: 1rem;
+    border-style: solid;
+    border-color: transparent transparent #f6f6f6 transparent;
+    position: absolute;
+    right: 0;
+    top: -2rem;
+  }
+  #nav a {
+    display: block;
+    height: 2rem;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+    transition: 0.3s ease;
+  }
+  #nav a:hover {
+    padding-left: 1.5rem;
+  }
+  #nav a:not(:last-child) {
+    border-bottom: solid 0.2rem var(--eighth-color);
+  }
+}
