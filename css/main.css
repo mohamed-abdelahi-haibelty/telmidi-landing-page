@@ -93,6 +93,9 @@ header .download {
   border: none;
   color: #fff;
 }
+header .download:hover {
+  background-color: var(--sixth-color);
+}
 .burger-menu {
   display: none;
 }
