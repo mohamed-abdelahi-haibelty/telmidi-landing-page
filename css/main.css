@@ -97,7 +97,17 @@ header .download {
   display: none;
 }
 .show-menu {
-  display: none !important;
+  display: block !important;
+}
+.FAQ {
+  display: none;
+}
+.rotate {
+  transform: rotate(90deg);
+  transition: 0.3s ease;
+}
+.second-color {
+  color: var(--second-color) !important;
 }
 
 /* =================MEDIA QUERY================ */
@@ -116,15 +126,15 @@ header .download {
     cursor: pointer;
   }
   .nav-btn i {
-    font-size: 2rem;
+    font-size: 2.5rem;
     color: var(--eighth-color);
   }
   #nav {
-    display: block;
+    display: none;
     position: absolute;
     right: 5rem;
     top: 8rem;
-    background-color: #f6f6f6;
+    background-color: var(--second-color);
     min-width: 200px;
     height: auto;
     transition: 0.3s ease;
@@ -133,10 +143,13 @@ header .download {
     content: "";
     border-width: 1rem;
     border-style: solid;
-    border-color: transparent transparent #f6f6f6 transparent;
+    border-color: transparent transparent var(--second-color) transparent;
     position: absolute;
     right: 0;
     top: -2rem;
+  }
+  .FAQ {
+    display: block;
   }
   #nav a {
     display: block;
@@ -144,9 +157,11 @@ header .download {
     padding-bottom: 3rem;
     padding-top: 2rem;
     transition: 0.3s ease;
+    color: #fff;
   }
   #nav a:hover {
     padding-left: 1.5rem;
+    color: var(--second-color);
   }
   #nav a:not(:last-child) {
     border-bottom: solid 0.2rem var(--eighth-color);
