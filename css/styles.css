@@ -52,7 +52,7 @@ header .container a {
   position: relative;
 }
 header .container a:hover {
-  background-color: var(--second-color);
+  background-color: var(--sixth-color);
 }
 .circle {
   position: absolute;
