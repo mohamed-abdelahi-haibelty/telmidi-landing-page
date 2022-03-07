@@ -31,7 +31,21 @@ header {
   background-color: #fff;
   height: 6rem;
   padding-top: 1rem;
+  position: absolute;
+  width: 100%;
+  top: -100%;
+  animation: anim4 2s forwards 2.5s;
 }
+/* ===== start header animation */
+@keyframes anim4 {
+  from {
+    top: -100%;
+  }
+  to {
+    top: 0%;
+  }
+}
+/* =====End header animation============ */
 header .container {
   display: flex;
   justify-content: space-between;
@@ -54,7 +68,7 @@ header .container a {
 header .container a:hover {
   background-color: var(--sixth-color);
 }
-.circle {
+/* .circle {
   position: absolute;
   background-color: rgb(146, 9, 9);
   width: 10rem;
@@ -68,11 +82,12 @@ header .container a:hover {
     transform: translate(-50%, -50%) scale(3);
     opacity: 0;
   }
-}
+} */
+
 /* ====================MAIN======================= */
 .main {
   background-color: #050505;
-  height: calc(100vh - 6rem);
+  height: calc(100vh);
 }
 .main .container {
   display: flex;
@@ -80,10 +95,29 @@ header .container a:hover {
   padding-top: 5rem;
 }
 .main .container .text {
-  animation-duration: 6s;
-  animation-timing-function: ease;
-  animation-name: move;
+  position: absolute;
+  left: -100%;
+  top: 30%;
+  animation: anim3 2s forwards 3s;
+  width: 45rem;
 }
+/* ==========START TEXT ANIMATION======== */
+@keyframes anim3 {
+  from {
+    left: -100%;
+  }
+  to {
+    left: 5%;
+  }
+}
+@media (max-width: 667px) {
+  .main .container .text {
+    top: 15%;
+    width: 35rem;
+  }
+}
+/* ==========END TEXT ANIMATION======== */
+
 .main .container h2 {
   font-size: 3rem;
   font-weight: bold;
@@ -110,28 +144,52 @@ header .container a:hover {
   animation-timing-function: ease-in-out;
   position: relative;
 }
-@keyframes vanish {
-  0% {
-    opacity: 0;
-    left: 1rem;
+.main .image-man {
+  position: absolute;
+  animation: anim forwards 2s, anim2 3s forwards 3s;
+  bottom: -100%;
+  left: 30%;
+}
+/* ==============START IMAGE ANIMATION============ */
+@keyframes anim {
+  from {
+    bottom: -100%;
   }
-  100% {
-    opacity: 1;
-    left: 0;
+  to {
+    bottom: 0%;
   }
 }
-@keyframes move {
-  0% {
-    opacity: 0;
-    right: 3rem;
-    top: 1rem;
+@keyframes anim2 {
+  from {
+    left: 30%;
   }
-  100% {
-    opacity: 1;
-    left: 2rem;
-    top: 0;
+  to {
+    left: 50%;
   }
 }
+@media (max-width: 667px) {
+  .main .image-man {
+    left: 10%;
+  }
+  @keyframes anim {
+    from {
+      bottom: -100%;
+    }
+    to {
+      bottom: 6%;
+    }
+  }
+  @keyframes anim2 {
+    from {
+      left: 10%;
+    }
+    to {
+      left: 20%;
+    }
+  }
+}
+/* ==========END IMAGE ANIMATION======== */
+
 /* ========================MAIN COUNTdOWN======================= */
 .countDown {
   display: flex;
