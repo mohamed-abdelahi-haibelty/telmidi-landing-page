@@ -165,7 +165,7 @@ header .download:hover {
     padding-left: 1.8rem;
     border-radius: 1rem;
     color: #fff;
-    background-color: var(--third-color);
+    background-color: var(--eighth-color);
   }
   .side-bar .logo {
     display: flex;
