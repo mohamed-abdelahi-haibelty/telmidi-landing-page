@@ -99,12 +99,6 @@ header .download:hover {
 .burger-menu {
   display: none;
 }
-.show-menu {
-  display: block !important;
-}
-.FAQ {
-  display: none;
-}
 .rotate {
   transform: rotate(90deg);
   transition: 0.3s ease;
@@ -112,8 +106,17 @@ header .download:hover {
 .second-color {
   color: var(--second-color) !important;
 }
+.side-bar {
+  display: none;
+}
+.translate {
+  transform: translate(0);
+}
+.social i:hover {
+  color: var(--eighth-color);
+}
 
-/* =================MEDIA QUERY================ */
+/* ================= MENU MEDIA QUERY================ */
 @media (max-width: 667px) {
   header .download {
     display: none;
@@ -134,39 +137,61 @@ header .download:hover {
   }
   #nav {
     display: none;
-    position: absolute;
-    right: 5rem;
-    top: 8rem;
-    background-color: var(--second-color);
-    min-width: 200px;
-    height: auto;
-    transition: 0.3s ease;
   }
-  #nav::before {
-    content: "";
-    border-width: 1rem;
-    border-style: solid;
-    border-color: transparent transparent var(--second-color) transparent;
-    position: absolute;
-    right: 0;
-    top: -2rem;
+  .side-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    background-color: var(--sixth-color);
+    padding: 2rem;
+    transition: 0.7s ease;
+    transform: translate(-100%);
   }
-  .FAQ {
+  .side-bar a {
     display: block;
-  }
-  #nav a {
-    display: block;
-    height: 2rem;
-    padding-bottom: 3rem;
-    padding-top: 2rem;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
     transition: 0.3s ease;
+    color: var(--fourth-color);
+  }
+  .side-bar > a:hover {
+    padding-left: 1.8rem;
+    border-radius: 1rem;
     color: #fff;
+    background-color: var(--third-color);
   }
-  #nav a:hover {
-    padding-left: 1.5rem;
-    color: var(--second-color);
+  .side-bar .logo {
+    display: flex;
+    justify-content: space-between;
   }
-  #nav a:not(:last-child) {
-    border-bottom: solid 0.2rem var(--eighth-color);
+  .side-bar .close-btn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+  }
+  .side-bar .close-btn i {
+    font-size: 4rem;
+    color: var(--fourth-color);
+  }
+  .side-bar h1 {
+    color: var(--fourth-color);
+    font-weight: bold;
+    font-size: 3.2rem;
+  }
+  .side-bar .social {
+    display: flex;
+    gap: 3rem;
+    margin-left: 58%;
+    transform: translateX(-50%);
+  }
+  .side-bar i {
+    font-size: 2rem;
   }
 }
