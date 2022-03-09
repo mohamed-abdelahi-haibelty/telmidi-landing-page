@@ -195,3 +195,32 @@ header .download:hover {
     font-size: 2rem;
   }
 }
+
+/* ==============PRE-LOADER======================== */
+.pre-loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: var(--third-color);
+  z-index: 1000;
+}
+
+.pre-loader h1 {
+  color: #fff;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20%;
+  transition: 0.2s ease;
+  animation: anim5 2s;
+  font-family: "Dancing Script", cursive;
+}
+@keyframes anim5 {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.3);
+  }
+}

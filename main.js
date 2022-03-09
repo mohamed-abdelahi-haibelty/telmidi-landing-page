@@ -3,6 +3,7 @@ let navBtn=document.querySelector(".nav-btn");
 let sideBar=document.querySelector(".side-bar");
 let closeBtn=document.querySelector(".close-btn");
 let barIcon= document.querySelector(".fa-bars");
+let loader=document.querySelector(".pre-loader");
 
 //eventLisstener
 navBtn.addEventListener("click",function(){
@@ -18,3 +19,7 @@ closeBtn.addEventListener("click",function(){
    barIcon.classList.remove("second-color")
     navBtn.classList.remove("rotate")
 });
+
+window.addEventListener("load",function(){
+    setTimeout(()=>loader.style.display="none",2000);
+})
