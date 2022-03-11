@@ -34,6 +34,7 @@ header {
   position: absolute;
   width: 100%;
   top: -100%;
+  box-shadow: 0 0 10px #ddd;
   animation: anim4 2s forwards 2.5s;
 }
 /* ===== start header animation */
@@ -86,7 +87,7 @@ header .container a:hover {
 
 /* ====================MAIN======================= */
 .main {
-  background-color: #050505;
+  background-color: #fff;
   height: calc(100vh);
 }
 .main .container {
@@ -128,7 +129,7 @@ header .container a:hover {
 .main .container p {
   font-size: 2rem;
   line-height: 1.7;
-  color: #fff;
+  color: var(--second-color);
   font-family: "Merriweather", serif;
 }
 .main .container span {
@@ -200,11 +201,11 @@ header .container a:hover {
   flex-direction: column;
   gap: 0.6rem;
   border-radius: 6.4rem;
-  background-color: #fff;
+  background-color: var(--second-color);
   align-items: center;
   justify-content: center;
   padding: 0.8rem 4.2rem;
-  color: var(--third-color);
+  color: var(--nineth-color);
   position: relative;
   overflow: hidden;
 }
@@ -232,7 +233,7 @@ header .container a:hover {
 }
 .countDown > div:hover:before {
   transform: scale(0);
-  background-color: var(--sixth-color);
+  background-color: var(--third-color);
 }
 .countDown > div h3 {
   z-index: 2;
