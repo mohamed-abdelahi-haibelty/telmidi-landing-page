@@ -37,6 +37,7 @@ header {
   position: fixed;
   top: -100%;
   animation: anim6 2s forwards 3s;
+  z-index: 3;
 }
 @keyframes anim6 {
   from {
@@ -156,9 +157,10 @@ header .download:hover {
     justify-content: space-between;
     position: fixed;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     left: 0;
     top: 0;
+    z-index: 1000;
     background-color: var(--sixth-color);
     padding: 2rem;
     transition: 0.7s ease;
@@ -342,7 +344,7 @@ main .secreen-image img {
   main .secreen-image {
     top: -100%;
     left: 10%;
-    width: 24rem;
+    width: 15rem;
     animation: anim8 3s forwards 2s, anim9 2s forwards 5s;
     animation-timing-function: ease;
   }
@@ -359,7 +361,7 @@ main .secreen-image img {
       left: 10%;
     }
     to {
-      left: 20%;
+      left: 25%;
     }
   }
 }
