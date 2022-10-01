@@ -14,23 +14,22 @@
 }
 
 body{
-    font-family: 'Kumbh Sans', sans-serif;
-    font-size: 12px;
-    background-color: #abe9cd;
+    /*font-size: 12px;*/
+    background-color: hsl(0, 0%, 98%);
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(315deg, #abe9cd 0%, #3eadcf 74%);
- 
 }
 
-.containerM{
+.Container_faq{
    border-radius: 20px;
    background-color: #fff;
    margin:139px 20px 20px 20px;
    padding-left: 25px;
-   padding-right: 25px;
+   /*padding-right: 25px;*/
+   font-family: 'Kumbh Sans', sans-serif;
+   font-size: 12px;
 }
-.bg-img{
+.Image_faq{
     background-image: url("../images/illustration-woman-online-mobile.svg");
     height: 192px;
     background-size: 254px;
@@ -39,7 +38,7 @@ body{
     top: -109px;
     margin-left: 18px;
 }
-.bg-pattern{
+.Image_faq_pattern{
     background-image: url("../images/bg-pattern-mobile.svg");
     height: 115px;
     background-size: 262px;
@@ -48,38 +47,38 @@ body{
     top: -187px;
     margin-left: 10px;
 }
-.box-img{
+.Image_faq_box{
     display:none;
 }
-.faq h1{
+.Container_faq_content h1{
     margin-left: 112px;
     margin-top: -163px;
     margin-bottom: 30px;
     color: var(--Very-dark-desaturated-blue);
 }
-.faq{
+.Container_faq_content{
     padding-bottom: 20px;
 }
-.question{
+.Container_faq_question{
     display:flex;
     align-items: star;
     justify-content: space-between;
     border-bottom: 1px solid hsl(240deg 5% 72%);
     margin-bottom: 20px;
 }
-.text h4{
+.Container_faq_text h4{
     color: var(--Dark-grayish-blue);
     margin-bottom: 20px;
     font-weight: 700;
 }
-.text h4:hover{
+.Container_faq_text h4:hover{
     color: var(--Soft-red);
     cursor: pointer;
 }
-.text p{
+.Container_faq_text p{
     display: none;
 }
-.text h4.active{
+.Container_faq_text h4.active{
     color: var(--Very-dark-desaturated-blue) !important;
     margin-bottom: 8px !important;
 }
@@ -90,10 +89,10 @@ p.active{
     display: block !important;
     transition: ease-in 0.7s;
 }
-.arrow img{
+.Btn_arrow img{
     transform: rotate(180deg);
 }
-.arrow img:hover{
+.Btn_arrow img:hover{
      cursor: pointer;
 }
 .rotation{
@@ -104,63 +103,54 @@ p.active{
     body{
         height: calc(100vh - 80px); 
     }
-    .containerM{
+    .Container_faq{
         width: 650px;
         margin-top: 80px;
         margin-left: auto;
         margin-right: auto;
         display: flex;
         justify-content: center;
-        gap: 209px;
+        gap: 285px;
         background-image: url("../images/bg-pattern-desktop.svg");
-        background-position: -176% 65%;
-        background-size: 508px;
+        position: relative;
+        background-size: 400px;
+        background-position: -104px;
         background-repeat: no-repeat;
     }
-    .bg-img{
-        /*background-image: url("images/illustration-woman-online-desktop.svg");
-        width: 265px;
-        height: 266px;
-        top: 93px;
-        left: -53px;
-        margin-left:0;
-        background-position: 106%;
-        background-size: 313px;*/
-
-        /*new design/////////*/
+    .Image_faq{
         background-image: url("../images/illustration-woman-online-desktop.svg");
         width: 265px;
         height: 266px;
-        top: 175px;
-        left: 357px;
+        left: 2px;
+        position: absolute;
+        top: 122px;
         margin-left: 0;
         background-position: 106%;
         background-size: 313px;
-        position: fixed;
     }
-    .bg-pattern{
+    .Image_faq_pattern{
         display: none;
        
     }
-    .box-img{
+    .Image_faq_box{
         position: absolute;
-        left: 22%;
-        top: 46%;
+        left: -59px;
+        top: 233px;
         width: 118px;
         display: block;
     }
-    .box-img img{
+    .Image_faq_box img{
         width:100%;
     }
-    .faq h1{
+    .Container_faq_content h1{
         margin-left: 0px;
         margin-top: 30px;
     }
-    .faq{
+    .Container_faq_content{
         padding-bottom: 50px;
         width: 241px;
     }
-    .question{
+    .Container_faq_question{
         gap:10px;
     }
     .top{

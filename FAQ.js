@@ -1,25 +1,25 @@
 
-const arrows = document.querySelectorAll(".arrow");
+const Btns_arrow = document.querySelectorAll(".Btn_arrow");
 let prev;
 let counter = [0,0,0,0,0];
 let isClicked = false;
 let prevIndex  = -1;
 
-arrows.forEach((arrow,index)=>{
+Btns_arrow.forEach((arrow,index)=>{
     arrow.addEventListener("click",()=>{
         function add(index){
-            prev = arrows[index].previousElementSibling;
-            prev.querySelector(".heading").classList.add("active");
-            prev.querySelector(".para").classList.add("active");
-            document.querySelector(".bg-img").classList.add("top");
-            arrows[index].querySelector(".img-arr").classList.add("rotation");
+            prev = Btns_arrow[index].previousElementSibling;
+            prev.querySelector(".Label_hadding").classList.add("active");
+            prev.querySelector(".Label_para").classList.add("active");
+            document.querySelector(".Image_faq").classList.add("top");
+            Btns_arrow[index].querySelector(".img-arr").classList.add("rotation");
         }
         function remove(index){
-            prev = arrows[index].previousElementSibling;
-            prev.querySelector(".heading").classList.remove("active");
-            prev.querySelector(".para").classList.remove("active");
-            document.querySelector(".bg-img").classList.remove("top");
-            arrows[index].querySelector(".img-arr").classList.remove("rotation");
+            prev = Btns_arrow[index].previousElementSibling;
+            prev.querySelector(".Label_hadding").classList.remove("active");
+            prev.querySelector(".Label_para").classList.remove("active");
+            document.querySelector(".Image_faq").classList.remove("top");
+            Btns_arrow[index].querySelector(".img-arr").classList.remove("rotation");
         }
 
         if(prevIndex === index || prevIndex === -1)
