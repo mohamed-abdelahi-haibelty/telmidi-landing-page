@@ -15,7 +15,7 @@ body{
     background-color: var(--Almost-White);
 }
 .Container_main p{
-    font-size: 1.125rem;
+    font-size: 15px;
 }
 .container{
     width:90%;
@@ -112,6 +112,24 @@ footer i{
     cursor: pointer;
     font-size: 23px;
 }
+.Container_about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Container_img_profil{
+    width: 120px;
+}
+.Container_img_profil img{
+    width: 100%;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+}
+.founder p{
+    line-height: 1.6;
+    color: var(--Medium-Gray);
+}
+
 @media(max-width:599px){
     .Btn_menu.active{
         display: none;
@@ -187,7 +205,13 @@ footer i{
         gap: 20px;
         align-items: center;
     }
-
+    .Container_about{
+        gap: 40px;
+        margin-top: 26px;
+    }
+    .founder footer{
+        padding: 0;
+    }
     
   
 }
@@ -227,11 +251,14 @@ footer i{
     .Container_main{
         display: flex;
         margin-top: 1.5rem;
-        width: 72%;
+        width: 100%;
         justify-content: space-between;
         margin-right: auto;
         margin-left: auto;
         align-items: center;
+    }
+    .Container_main p{
+        font-size: 1rem;
     }
     .Img_mobile img{
         width:100%;
@@ -271,4 +298,55 @@ footer i{
         position: absolute;
         right: 80px;
     }
+    .Container_about{
+        width: 700px;
+        position: absolute;
+        justify-content: space-between;
+        background-color: white;
+        border-radius: 18px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        flex-direction: row;
+        align-items: unset;
+    }
+    .Container_img_profil img{
+        border-radius: 6px;
+        height: 100%;
+    }
+    .Container_img_profil{
+        width: 500px;
+    }
+    .founder{
+        width: 618px;
+        padding: 30px;
+        position: relative;
+    }
+    .founder p{
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .founder footer .icons{
+        bottom: 20px;
+    }
+    .founder footer{
+        position: unset;
+    }
+}
+
+@media(min-width:1200px){
+    .Container_main{
+        width: 80%;
+    }
+    .Container_about{
+        width: 800px;
+        align-items: center;
+    }
+    .Container_img_profil{
+        width: 500px;
+    }
+    .founder{
+        width: 618px;
+    }
+    
 }
