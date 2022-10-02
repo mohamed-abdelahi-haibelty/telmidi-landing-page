@@ -24,14 +24,14 @@ let counter = 1;
 setTimeout(()=>{
     ++counter;
     Img_slide.src = `images/${counter}.png`
-    label_info.textContent = text[counter - 1];
+    //label_info.textContent = text[counter - 1];
 },4000)
 
 setInterval(()=>{
     Img_slide.src = `images/${counter}.png`
-    counter < 4 ? label_info.textContent = text[counter - 1] : label_info.textContent = text[0];
+    //counter < 4 ? label_info.textContent = text[counter - 1] : label_info.textContent = text[0];
     Img_slide.style.transition = "2s ease in";
-    label_info.style.transition = "2s ease in";
+    //label_info.style.transition = "2s ease in";
     ++counter;
     if(counter > 4) counter = 1;
 },5000)
